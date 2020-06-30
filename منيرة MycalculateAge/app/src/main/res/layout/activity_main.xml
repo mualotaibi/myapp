@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#eedad1"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#383e56"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:fontFamily="@font/abril_fatface"
+            android:text="01/01/2019"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_today"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="To"
+            android:textSize="25sp"
+            android:textColor="#9A1C1C"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#f69e7b"
+        android:fontFamily="@font/abril_fatface"
+        android:text="culculate"
+        android:textColor="#472525" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#fecb89"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Result"
+        android:textColor="#472525"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#d4b5b0"
+        android:fontFamily="@font/abril_fatface"
+        android:text="0 Years | 0 Months | 0 Days"
+        android:textColor="#472525"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="-400dp"
+        android:background="#DCAE9C"
+        android:fontFamily="@font/abril_fatface"
+        android:text="  { culculate your age } "
+        android:textColor="#472525"
+        android:textSize="40dp" />
+</LinearLayout>
